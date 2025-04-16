@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pacman # Name for the container
-        image: jesperberth/pacman # The Docker Hub image you found!
+        image: uzyexe/pacman # The Docker Hub image you found!
         ports:
         - containerPort: 80 # Assuming the game serves on port 80 inside the container
