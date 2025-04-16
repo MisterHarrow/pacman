@@ -1,0 +1,21 @@
+# pacman-app/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pacman-deployment # Name for the deployment object
+  # Add namespace: your-target-namespace if deploying to a specific one
+spec:
+  replicas: 1 # Run a single instance for the demo
+  selector:
+    matchLabels:
+      app: pacman # Label to select the pods
+  template:
+    metadata:
+      labels:
+        app: pacman # Label applied to the pods
+    spec:
+      containers:
+      - name: pacman # Name for the container
+        image: jesperberth/pacman # The Docker Hub image you found!
+        ports:
+        - containerPort: 80 # Assuming the game serves on port 80 inside the container
