@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  pacman-helm-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-16T14:24:54.038632+02:00"
+    description: A Helm chart for Kubernetes
+    digest: a5535b7b0328d8814c8bbfed48702751d114855a006053b4438f547904e08a2f
+    name: pacman-helm-chart
+    type: application
+    urls:
+    - https://misterharrow.github.io/pacman/pacman-helm-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-16T14:24:54.038021+02:00"
